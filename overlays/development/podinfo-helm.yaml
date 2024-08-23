@@ -20,7 +20,7 @@ spec:
               paths:
                 - path: /
                   pathType: Prefix
-            # tls:
-            #   - secretName: podinfo-tls
-            #     hosts:
-            #       - podinfo.dev.dramisinfo.com
+          tls:
+            - secretName: podinfo-tls
+              hosts:
+                - podinfo.dev.dramisinfo.com
