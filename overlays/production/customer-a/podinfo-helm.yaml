@@ -10,3 +10,5 @@ spec:
     namespace: prod-a-podinfo
   source:
     targetRevision: 6.0.0
+  syncOptions:
+    - CreateNamespace=true
