@@ -1,22 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
-namespace: development
-
 resources:
-  - ../../../base/pod-info-helm.yaml
+  - ./../../base
 
-patches:
-  - target:
-      kind: Application
-      name: podinfo
-    patch: |-
-      apiVersion: argoproj.io/v1alpha1
-      kind: Application
-      metadata:
-        name: podinfo
-      spec:
-        source:
-          targetRevision: "6.0.0"
-        destination:
-          namespace: "new-namespace"
+namePrefix: dev-
