@@ -11,15 +11,5 @@ spec:
   source:
     targetRevision: 6.0.1
     helm:
-      valuesObject:
-        ingress:
-          enabled: true
-          hosts:
-            - host: podinfo.dev.dramisinfo.com
-              paths:
-                - path: /
-                  pathType: Prefix
-            tls:
-              - secretName: podinfo-tls
-                hosts:
-                  - podinfo.dev.dramisinfo.com
+      valueFiles:
+        - values.yaml
