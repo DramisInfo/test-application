@@ -10,5 +10,3 @@ spec:
     namespace: development-podinfo
   source:
     targetRevision: 6.0.0
-  syncOptions:
-    - CreateNamespace=true
