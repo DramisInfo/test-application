@@ -13,7 +13,7 @@ spec:
     helm:
       valuesObject:
         ingress:
-          ingressClassName: nginx
+          className: nginx
           enabled: true
           hosts:
             - host: podinfo.dev.dramisinfo.com
