@@ -11,10 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      valueFiles:
-        - values.yaml
     repoURL: https://stefanprodan.github.io/podinfo
+    chart: podinfo
     targetRevision: 6.0.0
   syncPolicy:
     automated:
