@@ -5,5 +5,5 @@ resources:
 
 namePrefix: development-
 
-patchesStrategicMerge:
+patches:
   - podinfo-helm.yaml
