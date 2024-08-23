@@ -10,3 +10,19 @@ spec:
     namespace: prod-b-podinfo
   source:
     targetRevision: 6.0.0
+    helm:
+      valuesObject:
+        ingress:
+          className: nginx
+          enabled: true
+          annotations:
+            cert-manager.io/cluster-issuer: letsencrypt-prod
+          hosts:
+            - host: podinfo-c-b.dev.dramisinfo.com
+              paths:
+                - path: /
+                  pathType: Prefix
+          tls:
+            - hosts:
+                - podinfo-c-b.dev.dramisinfo.com
+              secretName: podinfo-tls
