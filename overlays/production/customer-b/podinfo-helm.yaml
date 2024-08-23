@@ -7,6 +7,6 @@ metadata:
     argocd.argoproj.io/sync-options: Prune=true
 spec:
   destination:
-    namespace: prod-a-podinfo
+    namespace: prod-b-podinfo
   source:
     targetRevision: 6.0.0

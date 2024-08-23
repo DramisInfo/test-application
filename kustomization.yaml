@@ -1,3 +1,4 @@
 resources:
   - ./overlays/development
   - ./overlays/production/customer-a
+  - ./overlays/production/customer-b
