@@ -6,4 +6,4 @@ resources:
 namePrefix: development-
 
 patches:
-  - podinfo-helm.yaml
+  - path: podinfo-helm.yaml
