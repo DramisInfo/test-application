@@ -8,7 +8,7 @@ spec:
   destination:
     namespace: podinfo
     server: https://kubernetes.default.svc
-  project: default
+  project: podinfo
   source:
     helm:
       valueFiles:
