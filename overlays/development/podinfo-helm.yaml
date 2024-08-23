@@ -12,6 +12,7 @@ spec:
     targetRevision: 6.0.2
     helm:
       valuesObject:
+        replicaCount: 3
         ingress:
           className: nginx
           enabled: true
